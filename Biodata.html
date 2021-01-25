@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Fonts\font-awesome\css\font-awesome.min.css">
+
+<style>
+body {
+	margin: 0;
+	font-family: "Karla", Poppins, Helvetica, sans-serif;
+	line-height: 1.7;
+	font-size: 15px;
+	color: #161616;
+	background-image: url(bgimg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+	::-webkit-scrollbar {
+width: 5px;
+}
+	::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+	::-webkit-scrollbar-thumb {
+background: #ffb3b3;
+}
+	/* latin-ext */
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: url("Fonts/RWmMoKWR9v4ksMfaWd_JN9XLiaQ6DQ.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Fonts/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+	/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Fonts/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlKd7c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Fonts/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#content {
+	max-width: 1200px;
+	background-color: #FDF2F3;
+	min-height: 75vh;
+	margin: 10vh auto;
+	border: 5px solid #F5ABB5;
+	border-radius: 5px;
+	position: relative;
+}
+#profile {
+	position: absolute;
+	display: inline-block;
+	float: left;
+	max-width: 380px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.deets {
+	padding: 65px 30px 45px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 17px;
+	text-rendering: auto;
+	color: #a77871;
+}
+.divinfoblock {
+	position: relative;
+	text-align: left;
+	width: 100%;
+	display: table;
+	margin: 0;
+	padding: 0 10px 10px 0;
+}
+.divinfo1 {
+	position: relative;
+	display: table-cell;
+	padding: 0 10px 5px 30px;
+	width: 10px;
+}
+.divinfo2 {
+	position: relative;
+	display: table-cell;
+	padding: 0 0 0 15px;
+	vertical-align: middle;
+}
+.copyright {
+	padding: 5px 10px 15px;
+	box-sizing: border-box;
+	width: 100%;
+	bottom: 0;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+}
+#info {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	max-width: calc(100% - 380px);
+	background-color: #fff;
+	z-index: 99;
+	overflow: auto;
+}
+.content-wrapper {
+	padding: 60px;
+	background-color: #fff;
+	position: relative;
+	height: auto;
+	width: auto;
+	border-left: 5px solid #FCE6E9;
+}
+.detailsheader {
+	padding: 15px 10px 45px 40px;
+	height: auto;
+	border: 1px solid #f6f6f6;
+	background: rgb(246, 246, 246) url(headersbg.png) repeat 0 0;
+	height: 5px;
+	margin: 30px 0 20px;
+}
+.detailsheadertitle {
+	text-transform: uppercase;
+	font-family: Karla, sans-serif;
+	font-size: 27px;
+	margin: auto;
+	color: #a77871;
+	margin-top: -3px;
+}
+.timelinemain {
+	box-sizing: border-box;
+}
+.timelineleft {
+	width: 20%;
+	display: table-cell;
+	padding-right: 25px;
+	min-height: 100%;
+	text-align: right;
+	vertical-align: top;
+}
+.timeline-item {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	padding-bottom: 15px;
+}
+.timelineright {
+	width: 80%;
+	display: table-cell;
+	padding-left: 25px;
+	padding-right: 15px;
+	vertical-align: top;
+}
+.timelinediv {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	bottom: 0;
+	width: 1px;
+	background-color: #eee;
+}
+.timelinediv::before {
+	content: '';
+	display: block;
+	position: absolute;
+	margin-top: 4px;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	margin-left: -8px;
+	border-radius: 10px;
+	background-color: #f5abb5;
+	opacity: .30;
+	z-index: 0;
+}
+.timelinediv::after {
+	content: '';
+	display: block;
+	position: absolute;
+	margin-top: 7px;
+	width: 7px;
+	height: 7px;
+	margin-left: -5px;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 2px solid #f5abb5;
+	z-index: 1;
+}
+h1 {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #b27377;
+	line-height: 0.1em !important;
+	margin: 10px 0 40px;
+	font-family: Great Vibes;
+	font-size: 60px;
+	color: #a77871;
+	font-weight: normal;
+}
+h1 span {
+	background: #fff;
+	padding: 0 10px;
+}
+</style>
+</head>
+<body>
+<div id="content">
+  <div id="profile">
+    <div class="deets">
+      <center>
+        <img class="circular" style="width:183px;height:100%" src="profilepic.png"><br>
+        <p style="text-align:justify;color:#6b6b6b;word-spacing:-0.5px;">I'm a full-time virtual assistant with 8+ years experience in digital marketing and online office administraton. As I want to spread my wings further, I'm currently taking up BS Computer Science to gain more knowledge, skills, and strategies that will help me solidify my career path around the industry and eventually branch out to different possibilities. </p>
+        <img class="circular" style="width:183px;margin-top: -10px;" src="design1.png">
+      </center>
+    </div>
+    <div class="copyright"> © 2020 All Rights Reserved.</div>
+  </div>
+  <div id="info">
+    <div class="content-wrapper">
+      <h1><span>Biodata</span></h1>
+      <div class="detailsheader">
+        <div class="detailsheadertitle"><span style="background: #f6f6f6;">Personal Information</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-user" style="font-size:17px" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px;">Celesica</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-map-marker" style="font-size:19px" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Davao City</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-envelope" style="font-size:15px;" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">jazztesting123@gmail.com</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-mobile" style="font-size:25px" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">+639151234567</span></div>
+      </div>
+      <div class="detailsheader">
+        <div class="detailsheadertitle"><span style="background: #f6f6f6;">Educational Background</span></div>
+      </div>
+      <div class="timelinemain">
+        <div class="timeline-item">
+          <div class="timelineleft"><b>2020</b>
+            <p style="color: #a5a6a7;margin-top:-10px">Tertiary</p>
+          </div>
+          <div class="timelinediv"></div>
+          <div class="timelineright">AMA University Online Education<br>
+            <i>Bachelor of Science in Computer Science</i></div>
+        </div>
+      </div>
+      <div class="timelinemain">
+        <div class="timeline-item">
+          <div class="timelineleft"><b>2006</b>
+            <p style="color: #a5a6a7;margin-top:-10px">Tertiary</p>
+          </div>
+          <div class="timelinediv"></div>
+          <div class="timelineright">University of the Philippines - Mindanao<br>
+            <i>Bachelor of Science in Applied Mathematics</i></div>
+        </div>
+      </div>
+      <div class="timelinemain">
+        <div class="timeline-item">
+          <div class="timelineleft"><b>2002</b>
+            <p style="color: #a5a6a7;margin-top:-10px">Secondary</p>
+          </div>
+          <div class="timelinediv"></div>
+          <div class="timelineright">Doña Carmen Denia National High School<br>
+          </div>
+        </div>
+      </div>
+      <div class="timelinemain">
+        <div class="timeline-item">
+          <div class="timelineleft"><b>1996</b>
+            <p style="color: #a5a6a7;margin-top:-10px">Elementary</p>
+          </div>
+          <div class="timelinediv"></div>
+          <div class="timelineright">Artemio Loyola Elementary School<br>
+          </div>
+        </div>
+      </div>
+      <div class="detailsheader">
+        <div class="detailsheadertitle"><span style="background: #f6f6f6;">Skills</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Website Content Management and Maintenance</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Search Engine Optimization</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Web and Graphics Design</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Digital Products Design</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Email Campaign Marketing</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Social Media Management</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Data Entry</span></div>
+      </div>
+      <div class="divinfoblock">
+        <div class="divinfo1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+        <div class="divinfo2"><span style="font-size:15px">Virtual 
+          Office Administration</span></div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+</body>
+</html>
